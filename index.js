@@ -127,6 +127,10 @@ app.get('/', (req, res) => {
     res.send("Genius Server Running")
 });
 
+app.get('/hero', (req, res) => {
+    res.send("Heroku second update check")
+});
+
 app.listen(port, (req, res) => {
     console.log("Genius Server Running", port)
 });
